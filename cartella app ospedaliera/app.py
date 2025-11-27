@@ -1,8 +1,8 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, EmailStr
+import streamlit as st
+from datetime import date, datetime, timedelta
 from typing import List, Optional
-from datetime import date
+import base64
+import os
 import ui
 ui.run()
 
@@ -337,3 +337,4 @@ def navigation_info(data: NavigationRequest):
         floor=floor,
         guidance=guidance,
     )
+
