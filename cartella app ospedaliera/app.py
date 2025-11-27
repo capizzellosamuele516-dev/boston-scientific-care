@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
 from datetime import date
+import ui
+ui.run()
 
 app = FastAPI(
     title="Hospital Patient Engagement API",
