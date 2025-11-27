@@ -1,0 +1,10 @@
+[ui]
+date_input_format = "DD/MM/YYYY"
+
+
+[theme]
+base="light"
+
+[client]
+toolbarMode = "minimal"
+
