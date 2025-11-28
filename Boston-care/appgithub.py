@@ -247,6 +247,44 @@ st.set_page_config(
     layout="wide",
 )
 
+
+# ===========================================
+# OVERRIDE TOTALE TEMA CHIARO STREAMLIT
+# ===========================================
+st.markdown("""
+<style>
+:root, html[data-theme="dark"] {
+    /* Override del tema interno di Streamlit */
+    --primary-color: #005c99 !important;
+    --background-color: # !important;
+    --secondary-background-color: #f3f6fb !important;
+    --text-color: #005c99 !important;
+    --font: "sans serif" !important;
+
+    /* Forza tema chiaro anche se il browser richiede dark */
+    color-scheme: light !important;
+}
+
+html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"], .stApp {
+    background-color: #FFFFFF !important;
+    color: #005c99 !important;
+}
+
+input, textarea, select, .stSelectbox div, .stTextInput input {
+    background-color: #FFFFFF !important;
+    color: #005c99 !important;
+    border: 1px solid #C9D1D9 !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #005c99 !important;
+}
+</style>
+""",
+unsafe_allow_html=True)
+# ===========================================
+
+
 custom_css = """
 <style>
 
