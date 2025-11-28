@@ -7,7 +7,7 @@ import os
 # ====================================================
 # URL DELLA TUA APP PRINCIPALE SU STREAMLIT CLOUD
 # ====================================================
-APP_PUBLIC_URL = "https://boston-scientific-care-4qdu5v9kzelsyzzmuzzpsj.streamlit.app/" 
+APP_PUBLIC_URL = "https://boston-scientific-care-tsdqxxoqxmzznw9jj2jzgc.streamlit.app/" 
 
 
 # ====================================================
@@ -170,3 +170,4 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
